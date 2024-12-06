@@ -9,9 +9,9 @@ HAVE NGROK INSTALLED
 
 Clone the repository
 
-- git clone https://github.com/d3fectlulz/PhishW.git
+- git clone https://github.com/d3fectlulz/PhishW-en.git
 
-- cd PhishW
+- cd PhishW-en
 
 - pkg install php
 
@@ -49,9 +49,9 @@ Social engineering with the victim goodbye!!
 
 - sudo apt-get install cloudflared
 
-- git clone https://github.com/d3fectlulz/PhishW.git
+- git clone https://github.com/d3fectlulz/PhishW-en.git
 
-- cd PhishW
+- cd PhishW-en
 
 - bash wifi.sh
 
